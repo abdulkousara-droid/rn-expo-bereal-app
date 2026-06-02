@@ -16,7 +16,7 @@ export default function LoginScreen() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [isLoading, setIsLoading] = useState(false);
-
+    const { signIn } = useAuth();
 
     const router = useRouter();
 
@@ -106,7 +106,6 @@ const styles = StyleSheet.create({
     },
     form: {
         width: "100%",
-        justifyContent: "space-between",
     },
     input: {
         backgroundColor: "#f5f5f5",
